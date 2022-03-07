@@ -32,6 +32,7 @@
     </nav>
 
     <main id="main-doc">
+    <section class="main-section">
     <h2 id="introduction">Introduction</h2>
     <p>
       <dfn>JavaScript</dfn> is a cross-platform, object-oriented scripting
@@ -66,7 +67,9 @@
         </p>
       </li>
     </ul>
+    </section>
 
+    <section class="main-section">
     <h2 id="what-you-should-already-know">What you should already know</h2>
     <p>This guide assumes you have the following basic background:</p>
     <ul>
@@ -82,7 +85,9 @@
         the tutorials linked on the main page about JavaScript.
       </li>
     </ul>
+    </section>
 
+    <section class="main-section">
     <h2 id="javascript-and-java">JavaScript and Java</h2>
     <p>
       JavaScript and Java are similar in some ways but fundamentally different
@@ -108,7 +113,9 @@
       do not have to implement interfaces. Variables, parameters, and function
       return types are not explicitly typed.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="hello-world">Hello world</h2>
     <p>
       To get started with writing JavaScript, open the Scratchpad and write your
@@ -120,7 +127,9 @@ greetMe("World");</code></pre>
       Select the code in the pad and hit <kbd>Ctrl</kbd>+<kbd>R</kbd> to watch
       it unfold in your browser!
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="variables">Variables</h2>
     <p>
       You use variables as symbolic names for values in your application. The
@@ -141,7 +150,9 @@ greetMe("World");</code></pre>
       sequences as characters in identifiers. Some examples of legal names are
       <var>Number_hits</var>, <var>temp99</var>, and <var>_name</var>.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="declaring-variables">Declaring variables</h2>
     <p>You can declare a variable in three ways:</p>
 
@@ -162,7 +173,9 @@ greetMe("World");</code></pre>
       This syntax can be used to declare a block scope local variable. See
       Variable scope below.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="variable-scope">Variable scope</h2>
     <p>
       When you declare a variable outside of any function, it is called a global
@@ -186,7 +199,9 @@ console.log(x); // 5</code></pre>
     </p>
     <pre><code>if (true) { let y = 5; }
 console.log(y); // ReferenceError: y is not defined</code></pre>
+    </section>
 
+    <section class="main-section">
     <h2 id="global-variables">Global variables</h2>
     <p>
       Global variables are in fact properties of the global objects. In web
@@ -199,7 +214,9 @@ console.log(y); // ReferenceError: y is not defined</code></pre>
       <var>phoneNumber</var> is declared in a document, you can refer to this
       variable from an iframe as <var>parent.phoneNumber</var>.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="constants">Constants</h2>
     <p>
       You can create a read-only, named constant with the <code>const</code>
@@ -236,7 +253,9 @@ function f() {
     </p>
     <pre><code>const MY_OBJECT = {"key": "value"};
 MY_OBJECT.key = "otherValue";</code></pre>
+    </section>
 
+    <section class="main-section">
     <h2 id="data-types">Data types</h2>
     <p>The latest ECMAScript standard defines seven data types:</p>
     <ul>
@@ -270,7 +289,9 @@ MY_OBJECT.key = "otherValue";</code></pre>
       objects as named containers for values, and functions as procedures that
       your application can perform.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="if-else-statement">if...else statement</h2>
     <p>
       Use the <code>if</code> statement to execute a statement if a logical
@@ -328,7 +349,9 @@ MY_OBJECT.key = "otherValue";</code></pre>
       example:
     </p>
     <pre><code>if ((x = y)) { /* statements here */ }</code></pre>
+    </section>
 
+    <section class="main-section">
     <h2 id="while-statement">while statement</h2>
     <p>
       A <code>while</code> statement executes its statements as long as a
@@ -375,7 +398,9 @@ while (n &lt; 3) {
       After completing the third pass, the condition <code>n &lt; 3</code> is no
       longer true, so the loop terminates.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="function-declarations">Function declarations</h2>
     <p>
       A function definition (also called a function declaration, or function
@@ -411,7 +436,9 @@ while (n &lt; 3) {
       of the parameter, this change is not reflected globally or in the calling
       function.
     </p>
+    </section>
 
+    <section class="main-section">
     <h2 id="reference">Reference</h2>
     <p>
       All the documentation in this page is taken from
@@ -421,6 +448,7 @@ while (n &lt; 3) {
         >MDN</a
       >.
     </p>
+    </section>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
