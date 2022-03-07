@@ -139,6 +139,19 @@ greetMe("World");</code></pre>
       Variable scope below.
     </p>
 
+    <h2>Global variables</h2>
+    <p>
+      Global variables are in fact properties of the global objects. In web
+      pages the global object is <code>window</code>, so you can set and access
+      global variables using the <code>window.<var>variable</var></code> syntax.
+    </p>
+    <p>
+      Consequently, you can access global variables declared in one window or
+      frame from another window or frame name. For example, if a variable called
+      <var>phoneNumber</var> is declared in a document, you can refer to this
+      variable from an iframe as <var>parent.phoneNumber</var>.
+    </p>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script type="module" src="index.js"></script>
   </body>
