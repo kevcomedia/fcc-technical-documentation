@@ -11,6 +11,12 @@
     @apply mb-4;
   }
 
+  a {
+    @apply text-sky-700 hover:underline focus:underline focus:outline-none
+      focus:ring-2 focus:ring-sky-500 active:text-red-500 active:ring-red-300
+      visited:text-violet-800;
+  }
+
   code,
   var {
     @apply bg-green-50 text-green-600 not-italic font-mono;
