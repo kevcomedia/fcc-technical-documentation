@@ -11,8 +11,9 @@
     @apply mb-4;
   }
 
-  code {
-    @apply bg-green-50 text-green-600;
+  code,
+  var {
+    @apply bg-green-50 text-green-600 not-italic font-mono;
   }
 
   pre {
