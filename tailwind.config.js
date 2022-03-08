@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./src/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      listStyleType: {
+        circle: 'circle',
+      },
+    },
   },
   plugins: [],
 }
