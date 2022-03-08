@@ -4,53 +4,77 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Technical Documentation Page</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <header>
-        <h1><abbr>JS</abbr> Documentation</h1>
+    <nav
+      id="navbar"
+      class="bg-gray-200 py-2 flex flex-col md:fixed md:h-screen md:w-80 md:pb-0 md:border-r-2 md:border-gray-400"
+    >
+      <header class="px-6">
+        <h1 class="text-3xl font-semibold my-2">
+          <abbr>JS</abbr> Documentation
+        </h1>
       </header>
-      <ul>
-        <li><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li>
+      <ul
+        class="divide-y divide-solid divide-gray-400 border-y border-gray-400 leading-tight grow md:overflow-y-auto"
+      >
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#what_you_should_already_know"
             >What you should already know</a
           >
         </li>
-        <li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#javascript_and_java"
             >JavaScript and Java</a
           >
         </li>
-        <li><a class="nav-link" href="#hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#variables">Variables</a></li>
-        <li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#hello_world">Hello world</a>
+        </li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#variables">Variables</a>
+        </li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#declaring_variables"
             >Declaring variables</a
           >
         </li>
-        <li><a class="nav-link" href="#variable_scope">Variable scope</a></li>
-        <li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#variable_scope">Variable scope</a>
+        </li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#global_variables">Global variables</a>
         </li>
-        <li><a class="nav-link" href="#constants">Constants</a></li>
-        <li><a class="nav-link" href="#data_types">Data types</a></li>
-        <li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#constants">Constants</a>
+        </li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#data_types">Data types</a>
+        </li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#if...else_statement"
             >if...else statement</a
           >
         </li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#while_statement">while statement</a>
+        </li>
+        <li class="px-6 py-1.5">
           <a class="nav-link" href="#function_declarations"
             >Function declarations</a
           >
         </li>
-        <li><a class="nav-link" href="#reference">Reference</a></li>
+        <li class="px-6 py-1.5">
+          <a class="nav-link" href="#reference">Reference</a>
+        </li>
       </ul>
     </nav>
 
-    <main id="main-doc">
+    <main class="p-6 text-zinc-800 bg-zinc-50 md:pl-96 md:pr-16" id="main-doc">
       <section class="main-section" id="introduction">
         <header>
           <h2>Introduction</h2>
@@ -69,7 +93,7 @@
           and statements. Core JavaScript can be extended for a variety of
           purposes by supplementing it with additional objects; for example:
         </p>
-        <ul>
+        <ul class="pl-8 list-disc mb-4">
           <li>
             <p>
               Client-side JavaScript extends the core language by supplying
@@ -98,7 +122,7 @@
           <h2>What you should already know</h2>
         </header>
         <p>This guide assumes you have the following basic background:</p>
-        <ul>
+        <ul class="pl-8 list-disc mb-4">
           <li>
             A general understanding of the Internet and the World Wide Web
             (<abbr>WWW</abbr>).
@@ -310,10 +334,10 @@ MY_OBJECT.key = "otherValue";</code></pre>
           <h2>Data types</h2>
         </header>
         <p>The latest ECMAScript standard defines seven data types:</p>
-        <ul>
+        <ul class="pl-6 list-disc mb-4">
           <li>
             Six data types that are primitives:
-            <ul>
+            <ul class="pl-6 list-circle">
               <li>Boolean. <code>true</code> and <code>false</code>.</li>
               <li>
                 <code>null</code>. A special keyword denoting a null value.
@@ -448,7 +472,7 @@ while (n &lt; 3) {
           value to <var>x</var>. Therefore, <var>x</var> and <var>n</var> take
           on the following values:
         </p>
-        <ul>
+        <ul class="pl-6 list-disc mb-4">
           <li>After the first pass: <var>n</var> = 1 and <var>x</var> = 1</li>
           <li>After the second pass: <var>n</var> = 2 and <var>x</var> = 3</li>
           <li>After the third pass: <var>n</var> = 3 and <var>x</var> = 6</li>
@@ -467,7 +491,7 @@ while (n &lt; 3) {
           A function definition (also called a function declaration, or function
           statement) consists of the <code>function</code> keyword, followed by:
         </p>
-        <ul>
+        <ul class="pl-6 list-disc mb-4">
           <li>The name of the function.</li>
           <li>
             A list of arguments to the function, enclosed in parentheses and
