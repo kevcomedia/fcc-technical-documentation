@@ -7,11 +7,11 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <nav id="navbar" class="bg-gray-200 py-2">
+    <nav id="navbar" class="bg-gray-200 py-2 flex flex-col md:fixed md:h-screen md:w-80 md:pb-0 md:border-r-2 md:border-gray-400">
       <header class="px-6">
         <h1 class="text-3xl font-semibold my-2"><abbr>JS</abbr> Documentation</h1>
       </header>
-      <ul class="divide-y divide-solid divide-gray-400 leading-tight">
+      <ul class="divide-y divide-solid divide-gray-400 leading-tight grow md:overflow-y-auto">
         <li class="px-6 py-1.5"><a class="nav-link" href="#introduction">Introduction</a></li>
         <li class="px-6 py-1.5">
           <a class="nav-link" href="#what_you_should_already_know"
@@ -51,7 +51,7 @@
       </ul>
     </nav>
 
-    <main id="main-doc">
+    <main class="md:pl-96" id="main-doc">
       <section class="main-section" id="introduction">
         <header>
           <h2>Introduction</h2>
